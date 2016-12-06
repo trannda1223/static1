@@ -9,7 +9,7 @@
 	<body>
 
 
-		<!-- Collapsible Navigation Bar -->
+		
 		 
 		<!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
 		<nav class="navbar navbar-fixed-top">
@@ -21,7 +21,7 @@
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse">
+			<div class="">
 			  <ul class="pull-right nav navbar-nav">
 			    <li><a href="#">Business</a></li>
 			    <li><a href="#">Stories</a></li>
@@ -29,7 +29,7 @@
 			    <li><a href="#">Sign In</a></li>
 			    <li><a href="#">Free Trial</a></li>
 			  </ul>
-			</div><!--navbar-collapse -->
+			</div>
 		</div>
 		</nav>
 
@@ -47,48 +47,45 @@
 				<div class="col-lg-6">
 					<h1>Learn Web Design, Coding & Much More </h1>
 				
-					<p>
+					<h2>
 						Treehouse offers a full-access free trial to our course library! Choose from 1,000s of hours of content, from JavaScript to Python to iOS. Learn to code and get the skills you need to launch a new career.
-					</p>
+					</h2>
 				</div>
 
-				<div class="col-lg-6 headerTable">
+				<div class="col-lg-6 headerTable"><!--whole fkn form-->
 
-					<table class="">
-						<thead>
-							<tr>
-								<h1 class="text-center">Get started today!</h1>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th class="col-md-3">First name</th>
-								<th class="col-md-3">Last name</th>
-							</tr>
-							<tr>
-								<th class="col-md-3"><input class="input-lg" type="text" name="First name"></th>
-								<th class="col-md-3"><input class="input-lg" type="text" name="Last name"></th>
-							</tr>
-							<tr>
-								<th class="col-md-3">Email address</th>
-								<th class="col-md-3">Password</th>
-							</tr>
-							<tr>
-								<th class="col-md-3"><input class="input-lg" type="text" name="Email address"></th>
-								<th class="col-md-3"><input class="input-lg" type="text" name="Password"></th>
-							</tr>
+					<div class="myTable">
+						<p class="ptable text-center">Get started today!</p>		
+						<form> <!--everything including the button-->	
+							<fieldset><!--first/last/email/pass NO BUTTON-->
+								<div class="row">
+									<div class="col-lg-6">
+										<label>First name</label>
+										<input class="input-lg" type="text" name="First name">	
+									</div>
+									<div class="col-lg-6">
+										<label>Last name</label>
+										<input class="input-lg" type="text" name="Last name">	
+									</div>
+								</div>
 
-							<thead>
-								<th>
-								<br>
-									<button type="button" class="btn btn-info btn-block">Claim Your Free Trial</button>
-								</th>
-							</thead>
-						</tbody>
-							 <!-- <button>Claim Your Free Trail</button> -->
-<!-- <div class="input-group input-group-lg"> -->
+								<div class="row">
+									<div class="col-lg-6">
+										<label>Email address</label>
+										<input class="input-lg" type="text" name="Email address">	
+									</div>
+									<div class="col-lg-6">
+										<label>Password</label>
+										<input class="input-lg" type="text" name="Password">	
+									</div>
+								</div>
+							</fieldset>
 
-					</table>
+							<button type="button" class="btn btn-info btn-block">Claim Your Free Trial</button>
+						</form>
+
+
+					</div><!--myTable-end-->
 
 
 <!-- 					<form>
@@ -113,7 +110,7 @@
 					</form>
  -->
 
-				</div>
+				</div> <!--COLUMN-->
 			</div><!--row-->
 		</div><!--GREEN-CONTAINER-END-->
 		</div>
